@@ -5,18 +5,18 @@ export const content = {
   hero: {
     name: "Sai Bhargav Thummalapalli",
     role: "Java Developer & Full Stack Engineer",
-    tagline: "Crafting scalable payment ecosystems and robust microservices architectures that power modern fintech solutions.",
+    tagline: "Crafting scalable ecosystems and robust microservices architectures that power modern software solutions.",
     cta: "View My Work",
     social: [
       { icon: FaLinkedin, link: "https://www.linkedin.com/in/saibhargav-t", label: "LinkedIn" },
       { icon: FaGithub, link: "https://github.com/saibhargav-t", label: "GitHub" },
-      { icon: SiLeetcode, link: "https://leetcode.com/problemset/", label: "LeetCode" },
+      { icon: SiLeetcode, link: "https://leetcode.com/u/saibhargav-t/", label: "LeetCode" },
       { icon: FaEnvelope, link: "mailto:saibhargavt@outlook.com", label: "Email" },
     ]
   },
   about: {
     title: "About Me",
-    description: "I am a passionate Java Developer with a knack for building high-performance, scalable systems. With deep expertise in Spring Boot, AWS, and Microservices, I specialize in solving complex backend challenges, particularly in the fintech domain. My approach combines rigorous engineering standards with a focus on delivering tangible business value.",
+    description: "I am a passionate Java Developer with a knack for building high-performance, scalable systems. With deep expertise in Spring Boot, AWS, and Microservices, I specialize in solving complex backend challenges. My approach combines rigorous engineering standards with a focus on delivering tangible business value.",
     skills: [
       { category: "Languages", items: ["Java (Advanced)", "JavaScript", "HTML/CSS", "SQL"] },
       { category: "Frameworks", items: ["Spring Boot", "Hibernate", "React", "JUnit", "Mockito", "Apache Struts"] },
@@ -70,7 +70,7 @@ export const content = {
         title: "Core Payment Integration System",
         description: "A robust, secure payment processing engine built on a microservices architecture. It orchestrates validation, processing, and provider communication with bank-grade security standards.",
         tech: ["Spring Boot", "Spring Security", "MySQL", "AWS", "JUnit"],
-        link: "https://github.com/saibhargav-t",
+        link: "https://github.com/saibhargav-t/Payment-Integration-Service",
         period: "Jun 2025 – Aug 2025"
       },
       {
@@ -157,6 +157,12 @@ export const content = {
         degree: "MPC",
         period: "2017 – 2019",
         score: "9.5 CGPA"
+      },
+      {
+        institution: "Greenwood High School",
+        degree: "SSC",
+        period: "2016 – 2017",
+        score: "8.8 CGPA"
       }
     ]
   },
@@ -171,6 +177,10 @@ export const content = {
       "Full Stack Engineer",
       "Software Development Engineer (SDE)",
       "Cloud/DevOps Engineer"
-    ]
+    ],
+    quote: {
+      text: "We are what our thoughts have made us; so take care about what you think. Words are secondary. Thoughts live; they travel far.",
+      author: "Swami Vivekananda"
+    }
   }
 };

@@ -44,15 +44,20 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <a 
-            href="/resume.pdf" 
-            download="SaiBhargav_Resume.pdf"
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="px-4 py-2 border border-accent text-accent rounded hover:bg-accent/10 transition-colors font-mono text-sm"
-          >
-            Resume
-          </a>
+          <div className="relative group">
+            <button className="px-4 py-2 border border-accent text-accent rounded hover:bg-accent/10 transition-colors font-mono text-sm flex items-center gap-2">
+              Download
+            </button>
+            <div className="absolute right-0 mt-2 w-48 bg-secondary border border-white/10 rounded shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-right">
+              <a 
+                href="/SaiBhargav_Resume.pdf" 
+                download="SaiBhargav_Resume.pdf"
+                className="block px-4 py-3 text-text hover:text-accent hover:bg-white/5 transition-colors font-mono text-sm"
+              >
+                Resume
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Mobile Menu Button */}

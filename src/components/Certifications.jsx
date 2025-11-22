@@ -36,7 +36,7 @@ const Certifications = () => {
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                 className="w-full lg:w-1/5 flex flex-col"
               >
-                <div className="bg-secondary/30 border border-white/5 p-6 rounded-lg hover:border-accent/50 transition-all duration-300 h-full flex flex-col relative group hover:scale-95 transform origin-center">
+                <div className="bg-secondary/30 border border-white/5 p-6 rounded-lg hover:border-accent/50 transition-all duration-300 h-full flex flex-col relative group hover:scale-105 transform origin-center">
                   <div className="absolute -top-3 -right-3 bg-accent/10 p-2 rounded-full text-accent opacity-0 group-hover:opacity-100 transition-opacity">
                     <FaCertificate size={16} />
                   </div>
@@ -50,7 +50,7 @@ const Certifications = () => {
                     <span>{cert.date}</span>
                   </div>
 
-                  <p className="text-xs text-muted mb-4 line-clamp-3 flex-grow">
+                  <p className="text-xs text-muted mb-4 line-clamp-3 group-hover:line-clamp-none transition-all duration-300 flex-grow">
                     {cert.description}
                   </p>
 

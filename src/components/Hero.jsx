@@ -64,13 +64,12 @@ const Hero = () => {
             {hero.cta}
           </Link>
           <a
-            href="/resume.pdf"
-            download="SaiBhargav_Resume.pdf"
+            href="/SaiBhargav_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 bg-accent text-primary font-bold rounded hover:bg-accent/80 transition-colors cursor-pointer font-mono"
           >
-            Download Resume
+            View Resume
           </a>
         </div>
         

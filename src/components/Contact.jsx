@@ -90,6 +90,11 @@ const Contact = () => {
           >
             Say Hello
           </a>
+
+          <div className="mt-8 pt-8 border-t border-white/5">
+            <p className="text-muted italic mb-2">"{contact.quote.text}"</p>
+            <p className="text-accent font-mono text-sm">- {contact.quote.author}</p>
+          </div>
         </motion.div>
       </div>
     </section>
