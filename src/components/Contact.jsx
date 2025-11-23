@@ -59,7 +59,7 @@ const Contact = () => {
             <div className="flex gap-4">
               {/* Social links are already in Footer/Hero, but adding a direct call here is good */}
               <a href="https://github.com/saibhargav-t" target="_blank" rel="noopener noreferrer" className="text-text hover:text-accent underline decoration-accent underline-offset-4">GitHub Profile</a>
-              <a href="https://leetcode.com/problemset/" target="_blank" rel="noopener noreferrer" className="text-text hover:text-accent underline decoration-accent underline-offset-4">LeetCode Profile</a>
+              <a href="https://leetcode.com/u/saibhargav-t/" target="_blank" rel="noopener noreferrer" className="text-text hover:text-accent underline decoration-accent underline-offset-4">LeetCode Profile</a>
             </div>
           </div>
         </motion.div>
