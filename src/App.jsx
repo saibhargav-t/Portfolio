@@ -1,26 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Education from './components/Education';
-import Certifications from './components/Certifications';
-import Contact from './components/Contact';
+import Home from './components/Home';
+import Tutorials from './components/Tutorials';
 import Footer from './components/Footer';
 
 function App() {
+  const [currentView, setCurrentView] = useState('home');
+
   return (
     <div className="bg-primary min-h-screen text-text selection:bg-accent selection:text-primary">
-      <Navbar />
+      <Navbar currentView={currentView} setCurrentView={setCurrentView} />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Certifications />
-        <Education />
-        <Contact />
+        {currentView === 'home' ? <Home setCurrentView={setCurrentView} /> : <Tutorials />}
       </main>
       <Footer />
     </div>
