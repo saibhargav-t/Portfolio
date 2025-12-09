@@ -14,7 +14,7 @@ const Contact = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <p className="text-accent font-mono mb-4">04. What's Next?</p>
+        <p className="text-accent font-mono mb-4">06. What's Next?</p>
         <h2 className="text-4xl md:text-5xl font-bold text-text mb-12">
           {contact.title}
         </h2>

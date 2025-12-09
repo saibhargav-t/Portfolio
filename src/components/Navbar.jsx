@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import { motion } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-const Navbar = () => {
+const Navbar = ({ currentView, setCurrentView }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const isHome = currentView === 'home';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,27 +24,55 @@ const Navbar = () => {
     { name: 'Contact', to: 'contact' },
   ];
 
+  const handleLogoClick = () => {
+    if (isHome) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      setCurrentView('home');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    setIsOpen(false);
+  };
+
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-primary/80 backdrop-blur-md py-4 shadow-lg' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled || !isHome ? 'bg-primary/95 backdrop-blur-md py-4 shadow-lg' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-        <Link to="hero" smooth={true} duration={500} className="cursor-pointer text-2xl font-bold text-accent font-mono">
+        <div onClick={handleLogoClick} className="cursor-pointer text-2xl font-bold text-accent font-mono">
           &lt;SB /&gt;
-        </Link>
+        </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              to={link.to}
-              smooth={true}
-              duration={500}
-              offset={-70}
-              className="text-text hover:text-accent cursor-pointer transition-colors font-medium"
+          {isHome ? (
+            <>
+              {navLinks.map((link) => (
+                <ScrollLink
+                  key={link.name}
+                  to={link.to}
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  className="text-text hover:text-accent cursor-pointer transition-colors font-medium"
+                >
+                  {link.name}
+                </ScrollLink>
+              ))}
+              <button 
+                onClick={() => setCurrentView('tutorials')}
+                className="text-text hover:text-accent cursor-pointer transition-colors font-medium bg-transparent border-none"
+              >
+                Tutorials
+              </button>
+            </>
+          ) : (
+            <button 
+              onClick={() => setCurrentView('home')}
+              className="text-text hover:text-accent cursor-pointer transition-colors font-medium bg-transparent border-none"
             >
-              {link.name}
-            </Link>
-          ))}
+              Home
+            </button>
+          )}
+          
           <div className="relative group">
             <button className="px-4 py-2 border border-accent text-accent rounded hover:bg-accent/10 transition-colors font-mono text-sm flex items-center gap-2">
               Download
@@ -76,24 +105,45 @@ const Navbar = () => {
           className="md:hidden absolute top-full left-0 w-full bg-secondary/95 backdrop-blur-md shadow-xl"
         >
           <div className="flex flex-col items-center py-8 space-y-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                to={link.to}
-                smooth={true}
-                duration={500}
-                offset={-70}
-                onClick={() => setIsOpen(false)}
-                className="text-text text-lg hover:text-accent cursor-pointer font-medium"
-              >
-                {link.name}
-              </Link>
-            ))}
+            {isHome ? (
+              <>
+                {navLinks.map((link) => (
+                  <ScrollLink
+                    key={link.name}
+                    to={link.to}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                    onClick={() => setIsOpen(false)}
+                    className="text-text text-lg hover:text-accent cursor-pointer font-medium"
+                  >
+                    {link.name}
+                  </ScrollLink>
+                ))}
+                <button
+                  onClick={() => {
+                    setCurrentView('tutorials');
+                    setIsOpen(false);
+                  }}
+                  className="text-text text-lg hover:text-accent cursor-pointer font-medium bg-transparent border-none"
+                >
+                  Tutorials
+                </button>
+              </>
+            ) : (
+               <button
+                  onClick={() => {
+                    setCurrentView('home');
+                    setIsOpen(false);
+                  }}
+                  className="text-text text-lg hover:text-accent cursor-pointer font-medium bg-transparent border-none"
+                >
+                  Home
+                </button>
+            )}
             <a 
-              href="/resume.pdf" 
+              href="/SaiBhargav_Resume.pdf" 
               download="SaiBhargav_Resume.pdf"
-              target="_blank" 
-              rel="noopener noreferrer"
               className="px-6 py-2 border border-accent text-accent rounded hover:bg-accent/10 transition-colors font-mono"
             >
               Resume

@@ -1,5 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import { SiLeetcode } from 'react-icons/si';
+import { FaGithub, FaLinkedin, FaEnvelope, FaCode } from 'react-icons/fa';
 
 export const content = {
   hero: {
@@ -10,7 +9,7 @@ export const content = {
     social: [
       { icon: FaLinkedin, link: "https://www.linkedin.com/in/saibhargav-t", label: "LinkedIn" },
       { icon: FaGithub, link: "https://github.com/saibhargav-t", label: "GitHub" },
-      { icon: SiLeetcode, link: "https://leetcode.com/u/saibhargav-t/", label: "LeetCode" },
+      { icon: FaCode, link: "https://leetcode.com/u/saibhargav-t/", label: "LeetCode" },
       { icon: FaEnvelope, link: "mailto:saibhargavt@outlook.com", label: "Email" },
     ]
   },
@@ -163,6 +162,69 @@ export const content = {
         degree: "SSC",
         period: "2016 – 2017",
         score: "8.8 CGPA"
+      }
+    ]
+  },
+  tutorials: {
+    title: "Tutorials",
+    subtitle: "I struggled learning these technologies, so I created these tutorials to make your journey smoother and frustration-free.",
+    note: "Note: I highly recommend reading the README.md file in each repository before starting. It gives you a better architectural view and setup instructions. If you encounter any problems, please raise an issue on GitHub so I can understand what you are struggling with and help you out.",
+    items: [
+      {
+        id: "springmvc-thymeleaf",
+        title: "Spring MVC & Thymeleaf EMS",
+        description: "Master server-side rendering with this comprehensive guide to building an Employee Management System. Explore the intricacies of the MVC architecture and data binding in depth. I highly recommend reading the README.md first to grasp the foundational concepts before diving into the code.",
+        tech: ["Java", "Spring Boot", "Spring MVC", "Thymeleaf", "MySQL"],
+        link: "https://github.com/saibhargav-t/springmvc-thymeleaf-ems",
+        difficulty: "Advanced"
+      },
+      {
+        id: "employee-management",
+        title: "Employee Management REST API",
+        description: "Fundamental Spring Boot REST API development. Learn how to structure your backend, handle HTTP requests, and manage database operations.",
+        tech: ["Java", "Spring Boot", "REST API", "JPA"],
+        link: "https://github.com/saibhargav-t/EmployeeManagementSpring-Basic",
+        difficulty: "Beginner"
+      },
+      {
+        id: "spring-security",
+        title: "Spring Security Basics",
+        description: "Demystifying Spring Security. Learn implementation of Authentication and Authorization, form login, and securing API endpoints.",
+        tech: ["Java", "Spring Boot", "Spring Security", "Thymeleaf"],
+        link: "https://github.com/saibhargav-t/Security-SpringBoot-Basic",
+        difficulty: "Intermediate"
+      },
+      {
+        id: "graphql-spring",
+        title: "GraphQL with Spring Boot",
+        description: "Modernize your APIs with GraphQL. Learn how to implement Schemas, Resolvers, and efficient data fetching with Spring for GraphQL.",
+        tech: ["Java", "Spring Boot", "GraphQL", "H2 Database"],
+        link: "https://github.com/saibhargav-t/graphql-spring",
+        difficulty: "Intermediate"
+      },
+      {
+        id: "spring-kafka",
+        title: "Spring Boot & Kafka Integration",
+        description: "Event-driven architecture basics. Learn to produce and consume messages using Apache Kafka and Spring Boot.",
+        tech: ["Java", "Spring Boot", "Kafka"],
+        link: "https://github.com/saibhargav-t/spring-kafka",
+        difficulty: "Intermediate"
+      },
+      {
+        id: "kafka-microservices",
+        title: "Kafka Microservices Pattern",
+        description: "Advanced microservices communication. Build decoupled services effectively communicating via Kafka topics.",
+        tech: ["Java", "Spring Boot", "Kafka", "Microservices"],
+        link: "https://github.com/saibhargav-t/kafka-microservices",
+        difficulty: "Advanced"
+      },
+      {
+        id: "ci-cd-pipeline",
+        title: "Cloud Native CI/CD Pipeline",
+        description: "End-to-end DevOps workflow. Setup Jenkins, Docker, and AWS for fully automated deployment pipelines.",
+        tech: ["AWS", "Jenkins", "Docker", "Terraform", "Node.js"],
+        link: "https://github.com/saibhargav-t/CI-CD-Pipeline-Using-Cloud-and-DevOps",
+        difficulty: "Advanced"
       }
     ]
   },

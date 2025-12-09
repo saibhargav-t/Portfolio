@@ -16,7 +16,7 @@ const Education = () => {
       >
         <div className="flex items-center gap-4 mb-12">
           <h2 className="text-3xl font-bold text-text">
-            <span className="text-accent font-mono mr-2">03.</span>
+            <span className="text-accent font-mono mr-2">05.</span>
             {education.title}
           </h2>
           <div className="h-px bg-secondary flex-grow max-w-xs"></div>
