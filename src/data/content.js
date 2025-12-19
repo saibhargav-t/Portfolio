@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaCode } from 'react-icons/fa';
 export const content = {
   hero: {
     name: "Sai Bhargav Thummalapalli",
-    role: "Java Developer & Full Stack Engineer",
+    role: "Java Developer & Full Stack Engineer, DevOps Engineer",
     tagline: "Crafting scalable ecosystems and robust microservices architectures that power modern software solutions.",
     cta: "View My Work",
     social: [
