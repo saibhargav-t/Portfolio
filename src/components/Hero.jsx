@@ -55,7 +55,7 @@ const Hero = () => {
       >
         <div className="flex gap-4">
           <Link
-            to="projects"
+            to="experience"
             smooth={true}
             duration={500}
             offset={-70}

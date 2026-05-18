@@ -27,15 +27,28 @@ export const content = {
     title: "Work Experience",
     jobs: [
       {
-        company: "HulkHire Tech",
-        role: "Java Developer Trainee",
-        period: "Jun 2025 – Aug 2025",
-        description: "Spearheaded the development of a critical Payment Integration System, acting as the middleware backbone for 50+ merchants and multiple Payment Service Providers (PSPs).",
+        company: "Froopx",
+        role: "Co-Founder & Lead Engineer",
+        period: "Jan 2026 – Present",
+        description: "Co-founded and engineered the FroopX platform, leading the migration to a highly-scalable, distributed architecture and developing production-grade mobile and web applications.",
         achievements: [
-          "Engineered a high-throughput system capable of processing 10,000+ daily transactions, reducing processing complexity by 65%.",
-          "Streamlined merchant onboarding workflows, slashing integration time from 2 weeks to just 3 days (78% efficiency gain).",
-          "Optimized operational efficiency by 85%, enabling cross-functional teams to focus on core business logic rather than maintenance.",
-          "Recognized as a STAR Performer for exceptional delivery speed and technical excellence."
+          "Decoupled and migrated monolithic FroopX application to a robust distributed architecture, separating static frontend elements from a decoupled Spring Boot API system (api.froopx.com).",
+          "Designed and implemented a secure, high-performance Flutter mobile application (Android/iOS) with progressive verification and secure JWT state management via flutter_secure_storage.",
+          "Architected a real-time event and notification engine, implementing backend event deduplication and spam suppression to scale platform feed responsiveness.",
+          "Optimized system connectivity and routing by establishing secure cross-origin (CORS) configurations and replacing hardcoded legacy dependencies."
+        ]
+      },
+      {
+        company: "Opensols Infotech Pvt Ltd",
+        role: "Software Developer",
+        period: "Jun 2023 – Jan 2026",
+        description: "Contributed to backend application development, API integrations, and enterprise software solutions.",
+        achievements: [
+          "Worked as a Software Developer contributing to backend application development, API integrations, and enterprise software solutions.",
+          "Developed and maintained scalable Java-based applications using Spring Boot, REST APIs, and database technologies.",
+          "Collaborated with cross-functional teams to deliver reliable software solutions and improve overall service quality.",
+          "Demonstrated strong ownership, adaptability, and problem-solving skills while handling additional responsibilities and project deliverables.",
+          "Recognized for professionalism, dedication, quick learning ability, and consistent contribution to organizational goals."
         ]
       },
       {
