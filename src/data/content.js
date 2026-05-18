@@ -32,7 +32,7 @@ export const content = {
         period: "Jan 2026 – Present",
         description: "Co-founded and engineered the FroopX platform, leading the migration to a highly-scalable, distributed architecture and developing production-grade mobile and web applications.",
         achievements: [
-          "Decoupled and migrated monolithic FroopX application to a robust distributed architecture, separating static frontend elements from a decoupled Spring Boot API system (api.froopx.com).",
+          "Decoupled and migrated monolithic FroopX application to a robust distributed architecture, separating static frontend elements from a decoupled Spring Boot API system.",
           "Designed and implemented a secure, high-performance Flutter mobile application (Android/iOS) with progressive verification and secure JWT state management via flutter_secure_storage.",
           "Architected a real-time event and notification engine, implementing backend event deduplication and spam suppression to scale platform feed responsiveness.",
           "Optimized system connectivity and routing by establishing secure cross-origin (CORS) configurations and replacing hardcoded legacy dependencies."
