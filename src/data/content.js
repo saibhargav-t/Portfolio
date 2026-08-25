@@ -17,10 +17,10 @@ export const content = {
     title: "About Me",
     description: "I am a passionate Java Developer with a knack for building high-performance, scalable systems. With deep expertise in Spring Boot, AWS, and Microservices, I specialize in solving complex backend challenges. My approach combines rigorous engineering standards with a focus on delivering tangible business value.",
     skills: [
-      { category: "Languages", items: ["Java (Advanced)", "JavaScript", "HTML/CSS", "SQL"] },
-      { category: "Frameworks", items: ["Spring Boot", "Hibernate", "React", "JUnit", "Mockito", "Apache Struts"] },
-      { category: "Cloud & DB", items: ["AWS", "GCP", "Azure", "MySQL", "MongoDB", "PostgreSQL", "Redis", "Cassandra"] },
-      { category: "DevOps & Tools", items: ["Docker", "Kubernetes", "Jenkins", "Terraform", "Git", "Kafka", "GraphQL"] },
+      { category: "Languages", items: ["Java (Advanced)", "JavaScript", "SQL", "Bash Scripting", "HTML/CSS"] },
+      { category: "Frameworks & Backend", items: ["Spring Boot", "Spring MVC", "Hibernate", "React", "JUnit", "Mockito", "Apache Struts", "REST APIs", "Microservices"] },
+      { category: "Cloud & DB", items: ["AWS", "GCP", "Azure", "MySQL", "PostgreSQL", "MongoDB", "Redis"] },
+      { category: "DevOps & Tools", items: ["Docker", "Kubernetes", "Jenkins", "Terraform", "Git", "Kafka", "GraphQL", "Postman", "Bruno", "ELK Stack", "Grafana"] },
     ]
   },
   experience: {
@@ -41,7 +41,7 @@ export const content = {
       {
         company: "Opensols Infotech Pvt Ltd",
         role: "Software Developer",
-        period: "Jun 2023 – Jan 2026",
+        period: "Jun 2023 – Aug 2026",
         description: "Contributed to backend application development, API integrations, and enterprise software solutions.",
         achievements: [
           "Worked as a Software Developer contributing to backend application development, API integrations, and enterprise software solutions.",
